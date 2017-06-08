@@ -1,9 +1,11 @@
+
 import os
 from app import create_app, db
 from flask_script import Manager, Shell
 # from flask.ext.migrate import Migrate, MigrateCommand
 
-app = create_app(os.environ.get('FLASK_CONFIG') or 'default')
+config = os.environ.get('FLASK_CONFIG') or 'default'
+app = create_app(config)
 manager = Manager(app)
 
 def make_shell_context():
