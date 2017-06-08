@@ -5,8 +5,8 @@
     "command": "python",
     "isShellCommand": true,
     "args": [
-        // "app.py"
-        "${file}"
+        "manage.py",
+        "runserver"
     ],
     "showOutput": "always"
 }
